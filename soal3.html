@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       var loop_s = function(){
+       var segitiga = '';
+       x = 21;
+       y = 6;
+        for (var i = 1; i <= y; i++) {
+            
+                if(i == 1){
+                    for (var j = 1; j <= x; j++){
+                        if(j % 2 == 0){
+                            segitiga += " ";
+                        }
+                        else{
+                            segitiga += "*";
+                        }
+                    }
+                }
+                else{
+                    for (var j = 1; j <= x; j++){
+                        if(i % 2 == 1 ){
+                            if(i == 3){
+                                if(i + (i-1) == j || x - (i+1)==j){
+                                segitiga += "*";
+                                 }
+                                else{
+                                    segitiga += " ";
+                                }   
+                            }
+                            else{
+                                if(i + (i-1) == j || x - (i+3)==j){
+                                segitiga += "*";
+                                 }
+                                else{
+                                    segitiga += " ";
+                                }  
+                            }
+                            
+                           
+                        }
+                        else{
+                            if(i == 2){
+                                if(i + (i-1) == j || x - i == j){
+                                segitiga += "*";
+                                }
+                                else{
+                                segitiga += " ";
+                                }   
+                            }
+                            else if(i == y){
+                                if(i + (i-1) == j){
+                                segitiga += "*";
+                                }
+                                else{
+                                segitiga += " ";
+                                }   
+                                }
+                            else{
+                                if(i + (i-1) == j || x - (i + 2) == j){
+                                segitiga += "*";
+                                }
+                                else{
+                                segitiga += " ";
+                                }   
+                            }
+                        }  
+                    }
+                }
+            
+        
+            
+            segitiga += '\n';
+        }
+        console.log(segitiga);
+       }
+</script>
+</head>
+<body>
+    
+</body>
+</html>
