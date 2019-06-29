@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arkademi Batch 11 - Soal 5</title>
+    <script>
+        var sort = function (n) {
+            var x = n.toString();
+            var y = x.split("0");
+            var p = y.length;
+
+
+            if (y.length == 1) {
+                var konversi = y[0];
+                konversi = konversi.split("");
+                konversi = konversi.sort(function (a, b) {
+                    return a - b
+                });
+                return konversi;
+            } else if (y.length == 2) {
+                var konversi = y[0];
+                konversi = konversi.split("");
+                konversi = konversi.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi2 = y[1];
+                konversi2 = konversi2.split("");
+                konversi2 = konversi2.sort(function (a, b) {
+                    return a - b
+                });
+                return (konversi + "," + konversi2);
+
+            } else if (y.length == 3) {
+                var konversi = y[0];
+                konversi = konversi.split("");
+                konversi = konversi.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi2 = y[1];
+                konversi2 = konversi2.split("");
+                konversi2 = konversi2.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi3 = y[2];
+                konversi3 = konversi3.split("");
+                konversi3 = konversi3.sort(function (a, b) {
+                    return a - b
+                });
+                return (konversi + "," + konversi2 + "," + konversi3);
+
+            } else if (y.length == 4) {
+                var konversi = y[0];
+                konversi = konversi.split("");
+                konversi = konversi.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi2 = y[1];
+                konversi2 = konversi2.split("");
+                konversi2 = konversi2.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi3 = y[2];
+                konversi3 = konversi3.split("");
+                konversi3 = konversi3.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi4 = y[3];
+                konversi4 = konversi4.split("");
+                konversi4 = konversi4.sort(function (a, b) {
+                    return a - b
+                });
+                return (konversi + "," + konversi2 + "," + konversi3 + "," + konversi4);
+
+            } else if (y.length == 5) {
+                var konversi = y[0];
+                konversi = konversi.split("");
+                konversi = konversi.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi2 = y[1];
+                konversi2 = konversi2.split("");
+                konversi2 = konversi2.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi3 = y[2];
+                konversi3 = konversi3.split("");
+                konversi3 = konversi3.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi4 = y[3];
+                konversi4 = konversi4.split("");
+                konversi4 = konversi4.sort(function (a, b) {
+                    return a - b
+                });
+
+                var konversi5 = y[4];
+                konversi5 = konversi5.split("");
+                konversi5 = konversi5.sort(function (a, b) {
+                    return a - b
+                });
+                return (konversi + "," + konversi2 + "," + konversi3 + "," + konversi4 + "," + konversi5);
+
+            } else {
+                return 'Terlalu banyak 0';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
